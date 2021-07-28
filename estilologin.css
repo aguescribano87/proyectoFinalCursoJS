@@ -1,0 +1,44 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    place-items: center;
+ }
+
+ .logIn{
+     background-color:lightgray;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     place-items: center;
+     padding: 50px;
+    
+ 
+ }
+ .logIn button{
+        
+    padding: 10px;
+    justify-items: left;
+}
+ .logIn input{
+     
+     margin: 10px;
+     padding: 10px;
+     
+ 
+ }#logo{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:45px;
+    margin: 5px;
+       
+}
+#contLogo{
+    display: inline-block;
+    background-color: lightsteelblue;
+    border-radius: 25px;
+    margin: 10px;
+      
+}

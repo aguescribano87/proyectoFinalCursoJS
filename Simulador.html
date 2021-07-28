@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AESGestion</title>
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+    <div id="contLogo">
+    <label id="logo">AESGestion</label>
+
+    </div>
+    <hr>
+    
+    <div class="cotizacion">
+        <label>Cotización Dolar:</label> 
+    </div>
+    <hr>
+    <!-- Botones Inicio -->
+    <div class="botonesIni">
+        <button id="btnClientes">Clientes</button>
+        <button id="btnProductos">Productos</button>
+        </div>
+
+    <!-- Botones y Secciones de Productos -->
+    <div class="botonesProd">
+        <label>Sección Productos</label><br>
+        <hr>
+        <button id="nuevoProd">Nuevo Producto</button>
+        <button id="stock">Stock</button>
+        <button id="btnVolverProd">Volver</button>
+    </div>
+    
+    <div id="contenedorCargar">
+        <hr>
+        <input type="text" placeholder="Nombre del Producto" id="nombre">
+        <input type="text" placeholder="Marca" id="marca">
+        <input min="0" type="number" placeholder="Precio de costo" id="costo">
+        <input min="0" type="number" placeholder="Margen de Ganancia" id="ganancia">
+        <input min="0" type="number" placeholder="Cantidad" id="cantidad">
+        
+        <button id="btnCargar">Cargar al Stock</button>
+
+    </div>
+    <div id="contenedorFiltrado"></div>
+    <div id="contenedorStock"></div>
+
+    <!-- Botones y Secciones de Clientes -->
+    <div class="botonesClientes">
+        <label>Sección Clientes</label><br>
+        <hr>
+        <button id="nuevoCliente">Nuevo Cliente</button>
+        <button id="listarClientes">Listado de Clientes</button>
+        <button id="btnVolverCliente">Volver</button>
+    </div>
+
+    <div id="contenedorCargarCliente">
+        <hr>
+        <input type="text" placeholder="Razon Social" id="clNombre">
+        <input min="0" type="number" placeholder="Numero de Contacto" id="clTel">
+        <input type="email" placeholder="Email" id="clMail">
+                
+        <button id="btnCargarCliente">Cargar al Cliente</button>
+
+    </div>
+    <div id="contenedorFiltradoClientes"></div>
+    <div id="contenedorListadoClientes"></div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="productos.js"></script>
+    <script src="botonesInicio.js"></script>
+    <script src="clientes.js"></script>
+    <script src="dolar.js"></script>
+</body>
+</html>
